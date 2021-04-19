@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bài3-->
+<script>
+    let a = [2,6,28,496,8128,33550336];
+
+    for (let i=0; i<a.length; i++){
+        let b = a[i];
+        let sum=0;
+        for (let j = 0; j<a[i]; j++){
+            if (a[i]%j==0){
+                sum= sum + j
+            }
+        }
+        if (sum===a[i]) {
+            document.write(a[i] + "là số hoàn hảo đứng ở vị trí" + i + " <br> ");
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
